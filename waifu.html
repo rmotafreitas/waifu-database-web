@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waifu</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <h1 id="btnHome" class="title">Waifu Database</h1>
+      <form method="get" action="/index.html">
+        <div class="form">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search your waifu..."
+            autocomplete="off"
+          />
+          <i id="btnSubmit" class="ph-bold ph-magnifying-glass"></i>
+        </div>
+        <input type="submit" value="Search" class="submit" />
+      </form>
+    </nav>
+    <img
+      onerror="if (this.src != 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/no-waifu-no-laifu-markousi-kocic.jpg') this.src = 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/no-waifu-no-laifu-markousi-kocic.jpg';"
+      alt=""
+      class="bg-img"
+      id="bg-img"
+    />
+    <div id="waifu"></div>
+    <script type="module" src="/waifu.js"></script>
+  </body>
+</html>
