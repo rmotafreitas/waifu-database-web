@@ -34,3 +34,5 @@ document.getElementById("bg-img").src = waifu.display_picture;
 document.getElementById("btnHome").addEventListener("click", () => {
   window.location.href = `/`;
 });
+
+document.title = document.title.replace("{name}", waifu.name);
