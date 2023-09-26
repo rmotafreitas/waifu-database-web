@@ -11,7 +11,7 @@ let actualDataSize = 0;
 
 const createWaifuComponent = (waifu) => {
   return `
-   <a href="waifu.html?waifu=${waifu.id}" class="waifu">
+   <a href="./waifu.html?waifu=${waifu.id}" class="waifu">
         <img
           class="waifu-img"
           src="${waifu.display_picture}"
