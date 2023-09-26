@@ -119,3 +119,9 @@ a {
   color: #000;
   font-size: 1.5rem;
 }
+
+@media (max-width: 845px) {
+  #waifus {
+    margin-top: 15rem;
+  }
+}

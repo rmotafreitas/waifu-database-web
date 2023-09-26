@@ -36,3 +36,7 @@ document.getElementById("btnHome").addEventListener("click", () => {
 });
 
 document.title = document.title.replace("{name}", waifu.name);
+
+window.onload = () => {
+  document.getElementById("loading-screen").classList.add("fadeOutAnimation");
+};

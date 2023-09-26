@@ -12,12 +12,12 @@
   text-align: center;
   margin-bottom: 1rem;
   cursor: pointer;
-  transition: 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .title:hover {
   color: #ffe6ff;
-  transition: 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .nav {
@@ -51,7 +51,7 @@
 }
 
 .submit {
-  visibility: hidden;
+  display: none;
 }
 
 .form {
@@ -66,4 +66,20 @@
   color: #000;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+  }
+  #search {
+    width: 80vw;
+  }
+  .title {
+    font-size: 3rem;
+  }
 }

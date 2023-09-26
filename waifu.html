@@ -6,7 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Waifu | {name}</title>
   </head>
+  <style>
+    .loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    .loading-circle {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      border: 5px solid #ccc;
+      border-top-color: #d3d5fa;
+      animation: spin 1s infinite linear;
+    }
+
+    .fadeOutAnimation {
+      animation: fadeOut 1s;
+      animation-fill-mode: forwards;
+      pointer-events: none;
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
   <body>
+    <div class="loading-screen" id="loading-screen">
+      <div class="loading-circle"></div>
+    </div>
     <nav class="nav">
       <h1 id="btnHome" class="title">Waifu Database</h1>
       <form method="get" action="/index.html">
